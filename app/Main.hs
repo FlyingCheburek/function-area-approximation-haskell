@@ -6,4 +6,4 @@ import Data.Maybe
 
 main :: IO ()
 main = do
-  print(fromJust ( ApproximationRules.averagesum (pi/2.0) (3.0*pi/2.0) 4 (\x -> -1 * cos x) ) ) 
+  print(fromJust ( ApproximationRules.trapezoidal 0.0 3.0 5 (\x -> x*x + 1.0) ) ) 
