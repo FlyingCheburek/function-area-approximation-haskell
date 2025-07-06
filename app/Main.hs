@@ -6,4 +6,4 @@ import Data.Maybe
 
 main :: IO ()
 main = do
-  print(fromJust ( ApproximationRules.trapezoidal 0.0 3.0 5 (\x -> x*x + 1.0) ) ) 
+  print(fromJust ( ApproximationRules.simpson 1.0 5.0 4 (\x -> 1.0/x) ) ) 
